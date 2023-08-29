@@ -1,0 +1,219 @@
+:root {
+  --primary-light: #f8ffd9;
+  --primary: #f5f23c;
+  --greyLight: #9ea9d6;
+  --greyLight-2: #c8d1f5;
+  --greyDark: #5a6181;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px    100% = 16px
+  overflow-y: scroll;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: .6px;
+  line-height: 1.4;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab {
+  width: 32rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--greyLight);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 28rem;
+  position: relative;
+
+  &::after {
+      content: '';
+      position: absolute;
+      width: inherit;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      background: var(--greyLight-2);
+  }
+
+  &__item {
+      padding-bottom: .6rem;
+      margin: 0 1.4rem;
+      font-size: 1.4rem;
+      font-weight: 500;
+      cursor: pointer;
+
+      &.is-active { color: var(--primary); }
+
+      &--1:hover {
+          color: var(--primary);
+
+          &:hover ~ .menu__line {
+              transform: translateX(0);
+              width: 6rem;
+          }
+      }
+
+      &--2:hover {
+          color: var(--primary);
+
+          &:hover ~ .menu__line {
+              transform: translateX(9.4rem);
+              width: 8.2rem;
+          }
+      }
+
+      &--3:hover {
+          color: var(--primary);
+
+          &:hover ~ .menu__line {
+              transform: translateX(21rem);
+              width: 7rem;
+          }
+      }
+  }
+
+  &__line {
+      position: absolute;
+      bottom: 0;
+      width: 6rem;
+      height: 100%;
+      border-bottom: 1px solid var(--primary);
+      z-index: 200;
+      pointer-events: none;
+      transition: all .5s ease;
+
+      &.activeSecond {
+          transform: translateX(9.4rem);
+          width: 8.2rem;
+      }
+      &.activeThirst {
+          transform: translateX(21rem);
+          width: 7rem;
+      }
+  }
+}
+
+.contents {
+  height: 22rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  &__content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      span {
+          color: var(--primary);
+          font-size: 3rem;
+          margin-bottom: 1.6rem;
+          padding: 1rem;
+          border-radius: 1.2rem;
+          background: var(--primary-light);
+      }
+
+      h2 {
+          font-size: 1.8rem;
+          color: var(--greyDark);
+      }
+      p { font-size: 1.2rem; margin: 1.6rem 0; }
+
+      button {
+          border: none;
+          outline: none;
+          background: none;
+          color: var(--primary);
+          font-family: inherit;
+          font-size: 1.4rem;
+          font-weight: 500;
+          cursor: pointer;
+
+          &:hover { border-bottom: 1px solid var(--primary);}
+      }
+  }
+}
+
+.fadeUp-enter { opacity: 0; }
+.fadeUp-enter-active {
+  animation: slide-in .3s ease-in-out forwards;
+  transition: opacity .3s;
+}
+
+.fadeUp-leave-active {
+  animation: slide-out .3s ease-in-out forwards;
+  transition: opacity  .3s;
+  opacity: 0;
+}
+
+.fadeDown-enter { opacity: 0; }
+.fadeDown-enter-active {
+  animation: slide-in-down .3s ease-in-out forwards;
+  transition: opacity .3s;
+}
+
+.fadeDown-leave-active {
+  animation: slide-out-down .3s ease-in-out forwards;
+  transition: opacity  .3s;
+  opacity: 0;
+}
+
+@keyframes slide-in {
+  from {
+      transform: translateY(2rem);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+
+@keyframes slide-out {
+  from {
+      transform: translateY(0);
+  }
+  to {
+      transform: translateY(-2rem);
+  }
+}
+
+@keyframes slide-in-down {
+  from {
+      transform: translateY(-2rem);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+
+@keyframes slide-out-down {
+  from {
+      transform: translateY(0);
+  }
+  to {
+      transform: translateY(2rem);
+  }
+}

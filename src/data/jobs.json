@@ -1,0 +1,74 @@
+{
+    "jobs": [
+        {
+            "cover": "polaris.png",
+            "title": "React Engineer",
+            "company": "TMT Insights",
+            "date": "Sep 2022 - Apr 2023",
+            "description": "React, Redux Toolkit, Javascript, Styled Components",
+            "longDescription": "I worked on Polaris and Anuvu projects, developed in React (Javascript), Redux Toolkit for state management, Material UI and Styled Components. The frontend team comprises two full-time developers (a colleague and myself) and a FE leader. //My leader set my daily tasks, assigned me some tickets, and I estimated and developed them. The tickets could be to create new features, any tech debt or fix some bugs; for example, both projects were full of tables with data that needed to be optimised for different viewports, or maybe the client asked to change the primary data to show on every row, or the data displayed on the expandable row; regarding Polaris, I developed a way to enter new orders on the system so the user can create drafts and save them in the middle of the charging; regarding Anuvu, we developed a new product that can show and manage all the movies in the catalogue, here I fix all the look and feel to match the designs, and also create some animations to show the movie details; regarding tech debts, I had a ticket to divide some Redux Slices into two or more slices because the first one grows so much, to name a few of my assigned tickets. As you can see, I developed and optimised code as much as CSS.",
+            "type": "development",
+            "url": ""
+        },
+        {
+            "cover": "health.jpeg",
+            "title": "Frontend Engineer",
+            "company": "Foxbox Digital",
+            "date": "Oct 2021 - Jul 2022",
+            "description": "NextJS, Typescript, Tailwind CSS, Material UI, Jest",
+            "longDescription": "I worked on a health care project for Sydney Care, developed in NextJS (based on React with Typescript), Tailwind UI and Styled Components. The frontend team comprises three full-time developers. //It was a scrum project, so we had all the scrum meetings where we planned, estimated and then developed the different tickets for each sprint. The project started with this team, so we created every MVP feature. This project helps third-aged and diseased people get transportation to the hospital to see their doctors. I was so involved in the design of the screens because I knew a lot about UX and was so excited to create a very user-friendly web. I make the login for the different users and develop the 'get my transport' view, which has a very descriptive step-by-step flow to set where the transport needs to pick up the client and where it should leave them and also if the client has any extra necessity, for example, use a wheelchair and need special transport, to name a few of the features I developed. As you can see, I set code and CSS. I used my previous experience as a UX designer to help with the designs to be easier to understand and to create a safe environment where users feel accompanied at every step.",
+            "type": "development",
+            "url": ""
+        },
+        {
+            "cover": "qupos.jpg",
+            "title": "Frontend Engineer",
+            "company": "Qu Beyond",
+            "date": "Apr 2021 - Oct 2021",
+            "description": "React Native, Typescript, Material UI, Jest",
+            "longDescription": "I worked on a subproduct of Qu POS named Qu Notify, developed in React Native with Typescript. The team comprises me as the only frontend, a backend, a QA and a project manager. //It was a scrum project, so we had all the scrum meetings where we planned, estimated and then developed the different tickets for each sprint. The project started with this team, so we created every MVP feature. This project helps franchise owners know how the franchise goes by different charts and metrics. For example, the franchise owner can receive notifications when the cashier opens or closes the box,  can see a projection of the store's earnings, view current earnings and compare it with previous months or the same month of prior years, to name a few functions. //As the only frontend on the team, I did all the new features and gave some demos for the Qu bosses to explain the 'develop solution'.",
+            "type": "development",
+            "url": ""
+        },
+        {
+            "cover": "retail.jpg",
+            "title": "UX Developer",
+            "company": "Making Sense",
+            "date": "Jan 2020 - Apr 2021",
+            "description": "React, React Native, Typescript, Material UI, Storybook, Jest",
+            "longDescription": "I worked on two projects for this company. //For the first three months, I was assigned to a project that helps lawyers have all their clients in one app; no matter which app uses them to contact them, it centred all the chats and emails of the clients for a law firm. It was developed in React with Typescript, Material UI and Styled Components. It was a scrum project, so we had all the scrum meetings where we planned, estimated and then developed the different tickets for each sprint. The project started before I joined the team. I was assigned to implement all the accessibility of the project because the client required that the web be readable by screen readers. //The second project was an app where customers could redeem the points accumulated on their purchases with their City MasterCard and use them on subsequent purchases. As a UX Developer, my main task was to create all the new components on the Storybook according to the designs so the frontend team could use them to make all the views. Also, I helped them when they had some styling issues. I worked with the design and frontend teams, attended the meetings of both teams and was a link between both teams.",
+            "type": "development",
+            "url": ""
+        },
+        {
+            "cover": "web-design.jpg",
+            "title": "Frontend Developer and UX/UI Designer",
+            "company": "Darwoft",
+            "date": "Oct 2018 - Jan 2020",
+            "description": "React, Typescript, Tailwind, Material UI, Jest, Adobe XD, Figma",
+            "longDescription": "I worked on different projects as a UX/UI Designer using Figma to create the designs so a developer could implement them. Sometimes, I also developed the layouts I created. //One of the projects was to create a new version of the University Blas Pascal students' page so they could check their signatures and scores. Another small project was to design mini app screens for Brahma Beer for an event. Finally, the biggest one was to create a React project to show the results of the machine learning team; this project was interesting because I made a user-friendly way to show the results and improvements that the project gives.",
+            "type": "development",
+            "url": ""
+        },
+        {
+            "cover": "club-grido.jpg",
+            "title": "Frontend Developer and UX/UI Designer",
+            "company": "SmartFran",
+            "date": "Feb 2017 - Aug 2018",
+            "description": "KnockoutJS, Javascript, Bootstrap, Adobe XD",
+            "longDescription": "I worked on the Club Grido project, developed in KnockoutJS (Javascript) Sass and Material UI. The frontend team comprises two full-time developers (a colleague and myself) and a FE leader. Grido is an ice cream company in Córdoba, Argentina, and Club Grido is their fidelization brand. The clients earn points on every purchase, and then they can redeem them in subsequent purchases. //It was a scrum project, so we had all the scrum meetings where we planned, estimated and then developed the different tickets for each sprint. The project started with this team, so we created every MVP feature. Initially, I worked very closely with the design team (external) to get what the client wanted and needed. After that, I made almost all the web and mobile viewports views, and my colleague worked with the connections with the backend data. For example, I created a virtual card that the users can show on the shop to earn points, the carousels to show the benefits and new products, and some features.",
+            "type": "development",
+            "url": ""
+        },
+        {
+            "cover": "agro.jpeg",
+            "title": "Frontend Developer",
+            "company": "Sooft Technology",
+            "date": "Nov 2015 - Jan 2017",
+            "description": "KnockoutJS, Javascript, Bootstrap",
+            "longDescription": "I created webs for small and medium companies that usually sold agricultural machinery for harvesting or raising livestock. Then, I was assigned to a project for the Córdoba City Government that helps the citizens access their information regarding payments,  financial aid, etc. Every project was developed on KnockoutJS (Javascript). It was created on KnockoutJS (Javascript).",
+            "type": "development",
+            "url": ""
+        }
+    ]
+}

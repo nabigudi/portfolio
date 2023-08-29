@@ -1,0 +1,90 @@
+.contact-form {
+  width: 100%;
+  margin-top: 20px;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+    .first-row {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+      .name {
+        padding-right: 5px;
+      }
+    }
+    .button-row {
+      display: flex;
+      justify-content: flex-end;
+      .flat-button {
+        margin: 0;
+      }
+    }
+  }
+
+  input[type='text'],
+  input[type='email'] {
+    width: 100%;
+    border: 0;
+    background: #ffd70036;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    width: 100%;
+    border: 0;
+    background: #ffd70036;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 150px;
+  }
+
+  .flat-button {
+    color: #ffd700;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid #ffd700;
+    float: left;
+    border-radius: 4px;
+    background: 0 0;
+    text-transform: uppercase;
+    float: right;
+    text-align: center;
+    margin-right: 10px;
+  }
+}
+
+.info-map {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background: #000;
+  top: 50px;
+  right: 30%;
+  z-index: 999999;
+  width: 267px;
+  padding: 20px;
+  color: #fff;
+  font-family: 'Helvetica';
+  font-size: 17px;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeIn 1s 1.5s;
+  animation-fill-mode: forwards;
+
+  span {
+    font-size: 16px;
+    color: #ffd700;
+  }
+}

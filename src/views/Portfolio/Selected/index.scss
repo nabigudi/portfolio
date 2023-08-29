@@ -1,0 +1,34 @@
+.portfolio-images{ 
+  height:400px;
+  display: flex;
+  justify-content: center;
+}
+
+.porfolio-figure{
+  width:100% !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  .portfolio-figure-caption {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+.slick-list {
+  height: 400px;
+}
+
+.slick-slide img {
+  height: 350px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.slick-slide figcaption {
+  color: white
+}
+

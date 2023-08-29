@@ -90,6 +90,11 @@
       }
     }
 
+    a.works-link {
+      &:after {
+        content: 'WORKS';
+      }
+    }
     a.portfolio-link {
       &:after {
         content: 'PORTFOLIO';

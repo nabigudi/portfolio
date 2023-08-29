@@ -1,0 +1,100 @@
+{
+    "portfolio": [
+        {
+            "cover": "tanaloa.png",
+            "title": "Tanaloa",
+            "date": "Jul 2019",
+            "description": "Adobe XD, Adobe Illustrator, Adobe Photoshop",
+            "longDescription": "Tanaloa is an application for women that helps them find a roomie among other women. Whether they are on vacation, moving from parent's home or just wanting to know how living with another person is, this will help them not only in the logistics of accommodation and money, but give them a safe place and environment to stay. It was born because I wanted to make something unique and useful for a target audience that is constantly in danger. Women are a delicate population in terms of safety and freedom, they need a really safe space for this kind of needs.This idea had a concise but complex process since I embraced all the stages of Design Thinking methodology (Empathize, Define, Ideate, Prototype and Test). I developed all of these stages cautiously and at a great level of detail, with the result being really successful.",
+            "images": [{"src": "tanaloa/tanaloa.png", "description": "Promotional Image"}, 
+            {"src": "tanaloa/tanaloa1.png", "description": "Inspirational Board"}, 
+            {"src": "tanaloa/tanaloa2.png", "description": "Low Definition Mockups"}, 
+            {"src": "tanaloa/tanaloa3.png", "description": "High Definition Prototypes"}, 
+            {"src": "tanaloa/tanaloa4.png", "description": "Prototype on real life"}],
+            "type": "web design",
+            "url": "https://www.behance.net/gallery/82915621/Tanaloa-Find-your-roomie-in-a-safe-and-fun-way"
+        },
+        {
+            "cover": "urania.jpg",
+            "title": "Urania",
+            "date": "Oct 2020",
+            "description": "Adobe XD, Adobe Illustrator, Adobe Photoshop",
+            "longDescription": "Urania is a web application that was made for a challenge on how could I make an UI to visualize the ISS and pictures of its current location along with the data of the current location. //This challenge was for a position in an important company. The challenged not only required UI design but also coding it end-to-end (back-end and front-end). //Creating something for this particular scenario was a little hard since the topic is quite plain and the imagination played a crucial role here. //Hoosing elements to design this web application was crucial to give it identity and style. I took the name from a god from Egypt and gave it a professional look without leaving the usability behind.",
+            "images": [{"src": "urania/urania.jpeg", "description": "High Definition Prototypes"}],
+            "type": "web design",
+            "url": ""
+        },
+        {
+            "cover": "beerjs.png",
+            "title": "BeerJS",
+            "date": "Apr 2020",
+            "description": "Adobe XD, Adobe Illustrator, Adobe Photoshop",
+            "longDescription": "BeerJS is an event that combines Beer, JS and talks. It's widely know and in my case I was in charged of the redesign of the branding for Córdoba, Argentina editions. //Although BeerJS has a very simple brand, it can be very overpowered if the correct actions taken. To me, BeerJS lacked personality and I decided to create a new style for it. //I researched for other places where the BeerJS takes places and see if they have a different design or style. After finding some, I started the redesign. //I changed the elements' style accordingly to what we have in our place so it feels more personal and close to the audience.",
+            "images": [{"src": "beerjs/beer1.png", "description": "High Definition Prototypes"}, 
+            {"src":  "beerjs/beer2.jpeg", "description": "Brand on real life"},
+            {"src":  "beerjs/beer3.JPG", "description": "Brand on real life"},
+            {"src":  "beerjs/beer4.png", "description": "Brand Slides"},
+            {"src":  "beerjs/beer5.png", "description": "Brief PDF"},
+            {"src":  "beerjs/beer6.png", "description": "Name badge for attendees"}],
+            "type": "Branding Design",
+            "url": ""
+        },
+        {
+            "cover": "darconf.png",
+            "title": "Darconf",
+            "date": "Jan 2020",
+            "description": "Adobe XD, Adobe Illustrator, Adobe Photoshop",
+            "longDescription": "Darconf is a sub-branding from a company I worked in, Darwoft. Since a long time they wanted to make in-company talks and there were lots of ideas but nothing solid. //With two co-workers decided to take this to the next level, and I was in charged of creating this new sub-brand to give the talks an identity and a whole personality. //This was kind of strange because the name was born from a meme and it was so catchy that was the needed kick-off for the rest of this. //I choose dinosaur as the pet of the brand because it was related to the meme. Darconf is the conjunction of 'Dar' from 'Darwoft' and 'Conf' from 'Conference'.",
+            "images": [{"src": "darconf/darconf1.png", "description": "Brand Slides"}, 
+            {"src":  "darconf/darconf2.jpg", "description": "Instagram publication"}, 
+            {"src":  "darconf/darconf3.png", "description": "Brand Slides for outside talks"},
+            {"src":  "darconf/darconf4.jpg", "description": "Brand usage on talks photos"}],
+            "type": "Branding Design",
+            "url": ""
+        },
+        {
+            "cover": "potato-gifts.png",
+            "title": "Potato Gifts",
+            "date": "May 2019",
+            "description": "React, Sass, Axios",
+            "longDescription": "Potato Gifts was a challenge I made to apply to a company. Basically you was asked to build a customer loyalty system where you can change products with your potapoints. //The project needed to be attractive and catchy enough so the user can actively win points and receive great products in exchange. //The combination of something as important as this kind of clients system and the use of a potato as the most visible element, were the main attraction for this system. //For the development, I decided to dive in a new technology: React. I've already worked with components and JS Frameworks (like Angular) but learning React was really satisfactory and useful.",
+            "images": [{"src": "potato-gifts/potato.png", "description": "High Definition Prototypes"}, 
+            {"src":  "potato-gifts/web.png", "description": "Web implementation"}],
+            "type": "development",
+            "url": "https://gitlab.com/nabi.gudi/potato-gifts"
+        },
+        {
+            "cover": "tesla.jpeg",
+            "title": "Tesla",
+            "date": "Nov 2019",
+            "description": "HTML5, Sass",
+            "longDescription": "Tesla was a website I created for my number one idol: Nikola Tesla. //I wanted to improve my development skills and mostly how to build layouts more efficiently and with the best practices. //This wasn't very hard to make since Tesla I'm a fan of his work and contribution to science. //I used parallax for this project.",
+            "images": [{"src": "tesla/tesla1.jpeg", "description": "Main image"}],
+            "type": "development",
+            "url": "https://codepen.io/nabigudi/pen/oNgeYNQ"
+        },
+        {
+            "cover": "club-grido.jpg",
+            "title": "Club Grido",
+            "date": "Nov 2019",
+            "description": "HTML5, Sass, KnockoutJS",
+            "longDescription": "Club Grido is a customer loyalty system for the company Grido. You have a membership and a system with points to exchange products. //Front-end was really outdated and I, at that time, proposed to migrate to a _component-based_ framework (Knockout) and migrate it. //Researching Knockout wasn't hard since I have a solid knowledge in Vanilla JS. //I also collaborated with some UX and UI design for the website.",
+            "images": [{"src": "club-grido/clubg1.jpeg", "description": "Web implementation - Benefits section"}, 
+            {"src":  "club-grido/clubg2.jpeg", "description": "Web implementation - Map section"},
+            {"src":  "club-grido/clubg3.jpeg", "description": "Web implementation - Slider section"},
+            {"src":  "club-grido/clubg4.png", "description": "High Definition Mobile Prototypes"}],
+            "type": "development",
+            "url": "https://www.clubgrido.com.ar/"
+        },
+        {
+            "cover": "corina.png",
+            "title": "Corina Draws",
+            "date": "Jan 2021",
+            "description": "Adobe Photoshop, Procreate, Pencils",
+            "longDescription": "I always love drawing since I was a child, so nowadays I tried to continue with that passion with some art, just because.",
+            "images": [{"src": "", "description": ""}],
+            "type": "drawing",
+            "url": "https://www.instagram.com/corina.draws/"
+        }
+    ]
+}

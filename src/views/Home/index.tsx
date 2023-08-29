@@ -31,7 +31,7 @@ const Home = () => {
 
           <h2>React and React Native Developer </h2>
           
-          <AnimatedButton str='Contact me' action='/contact'/>
+          <AnimatedButton str='Contact me' page='/contact'/>
         </div>
       </div>
     </>

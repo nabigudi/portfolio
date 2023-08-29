@@ -1,7 +1,7 @@
 :root {
   --color-text: navy;
   --color-bg: papayawhip;
-  --color-bg-accent: #ecdcc0;
+  --color-bg-accent: #ffd70036;
     --size: clamp(10rem, 1rem + 40vmin, 30rem);
   --gap: calc(var(--size) / 14);
   --duration: 60s;
@@ -13,7 +13,7 @@
   :root {
     --color-text: papayawhip;
     --color-bg: navy;
-    --color-bg-accent: #2626a0;
+    --color-bg-accent: #ffd70036;
   }
 }
 

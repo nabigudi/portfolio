@@ -48,7 +48,10 @@
 
 .container.contact-page,
 .container.about-page,
-.container.portfolio-page {
+.container.portfolio-page,
+.container.jobs-page,
+.container.portfolio-selected-page,
+.container.jobs-selected-page{
   
     h1 {
       font-size: 53px;
@@ -144,6 +147,17 @@
       }
     }
 
+    span.company {
+      color: #8d8d8d;
+      margin-top: 20px;
+      font-weight: 400;
+      font-size: 15px;
+      font-family: sans-serif;
+      letter-spacing: 3px;
+      animation: fadeIn 1s 1.8s backwards;
+      display: flex;
+    }
+
     ul {
       height: 5rem;
       overflow: hidden;
@@ -172,3 +186,6 @@
     }
   }
 }
+
+
+
