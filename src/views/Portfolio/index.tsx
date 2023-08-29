@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import AnimatedLetters from "../../components/AnimatedLetters";
 import "./index.scss";
 import Item from "./Item";

@@ -1,8 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ReactSVG } from 'react-svg';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import './index.scss'
-import { FunctionComponent, SVGProps, useState } from 'react';
+import { useState } from 'react';
 
 interface techsIconProp {
   icon: IconProp;

@@ -18,7 +18,7 @@ const Item = ({item} : ItemProps) => {
       <div className="content">
         <p className="title">{item.title}</p>
         <h4 className="description">{item.description}</h4>
-        <AnimatedButton str={"View"} page={''} state={{}}/>
+        <AnimatedButton str={"View"} page={''} state={{}} isLink={false}/>
       </div>
     </Link>
   )

@@ -9,10 +9,6 @@ interface ItemProps {
 
 const Item = ({item} : ItemProps) => { 
 
-  const selectPortfolioItem = (item: Job) => {
-    console.log(item)
-  }
-
   return(
     <Link to={'/selectedWork'} state={{item: item}} className="image-box" >
       <img 
@@ -23,7 +19,7 @@ const Item = ({item} : ItemProps) => {
         <p className="title">{item.title}</p>
         <h4 className="company">{item.company}</h4>
         <h4 className="description">{item.description}</h4>
-        <AnimatedButton str={"View"} page={''} state={{}}/>
+        <AnimatedButton str={"View"} page={''} state={{}} isLink={false}/>
       </div>
     </Link>
   )

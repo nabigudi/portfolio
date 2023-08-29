@@ -4,19 +4,30 @@ import './index.scss'
 interface AnimatedButtonProps {
   str: string;
   state?: {}; 
-  page: string
+  page: string;
+  isLink?: boolean;
 }
-const AnimatedButton = ({ str, state, page }: AnimatedButtonProps) => {
-  console.log(str, state, page)
+const AnimatedButton = ({ str, state, page, isLink = true }: AnimatedButtonProps) => {
   return (
     <div>
-      <Link className="link" to={page} state={state}>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        {str}
-      </Link>
+      {isLink ? 
+         <Link className="link" to={page} state={state}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          {str}
+        </Link>
+        :
+          <div className="link">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            {str}
+          </div>
+        }
+    
     </div>
   )
 }
