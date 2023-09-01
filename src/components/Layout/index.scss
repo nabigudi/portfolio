@@ -34,7 +34,7 @@
 .container {
   width: 100%;
   will-change: contents;
-  height: 90%;
+  height: 93%;
   min-height: 566px;
   position: absolute;
   opacity: 0;
@@ -44,6 +44,8 @@
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
+  display: flex;
+  justify-content: space-around;
 }
 
 .container.contact-page,

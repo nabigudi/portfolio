@@ -43,6 +43,7 @@ const Selected = () => {
           {item.longDescription.split('//').map(paragraph => <p>{paragraph}</p>)}
 
           { item.images.length && item.images[0].src !== "" && (
+            item.images.length > 2 ?
             <Slider {...settings}>
               {item.images.map((image, index) => 
                 <figure className='porfolio-figure'>
@@ -53,7 +54,15 @@ const Selected = () => {
                 </figure>
                 
               )}
-            </Slider>)
+            </Slider>
+            : 
+            <figure className='porfolio-figure-alone'>
+              <div>
+                <img src={require(`../../../assets/images/portfolio/${item.images[0].src}`)} alt="portfolio"/>
+                <figcaption className='portfolio-figure-caption'>Fig.1 - {item.images[0].description}</figcaption>
+              </div>
+            </figure>
+            )
           } 
 
           <h2>

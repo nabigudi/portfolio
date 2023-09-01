@@ -4,7 +4,7 @@
   justify-content: center;
 }
 
-.porfolio-figure{
+.porfolio-figure, .porfolio-figure-alone{
   width:100% !important;
   display: flex !important;
   justify-content: center;
@@ -19,16 +19,17 @@
 }
 
 .slick-list {
-  height: 400px;
+  height: 40vh;
 }
 
-.slick-slide img {
-  height: 350px;
+.slick-slide img, .porfolio-figure-alone img {
+  height: 33vh;
   object-fit: contain;
   object-position: center;
+  width: 90%;
 }
 
-.slick-slide figcaption {
+.slick-slide figcaption, .porfolio-figure-alone figcaption {
   color: white
 }
 

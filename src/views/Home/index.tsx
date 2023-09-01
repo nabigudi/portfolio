@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import Me from '../../assets/images/me.png'
 import AnimatedLetters from '../../components/AnimatedLetters'
 import './index.scss'
 import AnimatedButton from '../../components/AnimatedButton';
@@ -33,6 +33,7 @@ const Home = () => {
           
           <AnimatedButton str='Contact me' page='/contact'/>
         </div>
+        <img className="me-photo" src={Me} alt='Nabila talking on Webconf 2019'/>
       </div>
     </>
   )
