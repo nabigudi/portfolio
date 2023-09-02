@@ -21,13 +21,11 @@
   left: 120px;
   font-size: 18px;
   font-family: 'La Belle Aurore', cursive;
+  display: flex;
+  flex-direction: column;
 }
 
-.bottom-tag-html {
-  margin-left: -20px;
-}
-
-.top-tag-body {
+.tag-body {
   margin-left: 20px;
 }
 
@@ -135,6 +133,8 @@
       font-weight: 300;
       max-width: fit-content;
       animation: pulse 1s;
+      text-align: justify;
+      
       &:nth-of-type(1) {
         animation-delay: 1.1s;
       }
@@ -189,5 +189,66 @@
   }
 }
 
+@media (max-width:961px) {
+  .tags {
+    font-size: 3rem;
+    left: 40px;
+  }
 
+  .top-tags {
+    top: 80px;
+  }
+  
+  .bottom-tags {
+    bottom: 80px;
+  }
+
+
+.container.contact-page,
+.container.about-page,
+.container.portfolio-page,
+.container.jobs-page,
+.container.portfolio-selected-page,
+.container.jobs-selected-page{
+  .text-zone {
+    width: 80%;
+  }
+  h1 {
+    font-size: 7rem;
+    line-height: 9rem;
+    &:before, &:after {
+      font-size: 3rem;
+    }
+  }
+  p {
+    font-size: 2rem;
+  }
+  h2 {
+    color: white;
+    font-size: 2em;
+  }
+}
+
+  .home-page {
+    .text-zone {
+      width: 90%;
+      max-height: 90%;
+      z-index: 1000;
+      h1 {
+        font-size: 7em;
+        line-height: 1em;
+      }
+      .tags-h1 {
+        font-size: 3em;
+      }
+      h2 {
+        color: white;
+        font-size: 2em;
+      }
+      .link {
+        font-size: 2em;
+      }
+    }
+  }
+}
 

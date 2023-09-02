@@ -1,3 +1,8 @@
+.container {
+  justify-content: space-between !important;
+  flex-direction: row-reverse !important;
+}
+
 .home-page {
   .text-zone {
     position: absolute;
@@ -73,6 +78,9 @@
 .flex-col {
   display: flex;
   flex-direction: column;
+  h1 {
+    margin-left: 2rem;
+  }
 }
 
 .me-photo {
@@ -88,4 +96,58 @@
     hsl(0 0% 0% / 1) 80%,
     hsl(0 0% 0% / 0)
   );
+
+  animation: fadeIn 3s 1.5s backwards;
+}
+
+.me-photo-div {
+  background: url(../../assets/images/me.png);
+  width: 50vw;
+  height: 120vh;
+  margin-right: 10rem;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  animation: fadeIn 3s 1.5s backwards;  
+  mask-image: linear-gradient(
+    var(--mask-direction, to right),
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 20%,
+    hsl(0 0% 0% / 1) 80%,
+    hsl(0 0% 0% / 0)
+  );
+}
+
+
+@media (max-width:961px) {
+  .me-photo-div {
+    background: url(../../assets/images/me.png);
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    opacity: 50%;
+    margin: 0;
+  }
+
+  .home-page {
+    .text-zone {
+      width: 90%;
+      max-height: 90%;
+      h1 {
+        font-size: 7em;
+        line-height: 1em;
+      }
+      .tags-h1 {
+        font-size: 3em;
+      }
+      h2 {
+        color: white;
+        font-size: 2em;
+      }
+      .link {
+        font-size: 2em;
+      }
+    }
+  }
 }

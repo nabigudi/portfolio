@@ -11,6 +11,8 @@ const Home = () => {
   return (
     <>
       <div className="container home-page">
+        {/* <img className="me-photo" src={Me} alt='Nabila talking on Webconf 2019'/> */}
+        <div className="me-photo-div"></div>
         <div className="text-zone flex-col">
           <span className="tags-h1">&lt;h1&gt;</span>
           <h1 className="flex-col">
@@ -33,7 +35,6 @@ const Home = () => {
           
           <AnimatedButton str='Contact me' page='/contact'/>
         </div>
-        <img className="me-photo" src={Me} alt='Nabila talking on Webconf 2019'/>
       </div>
     </>
   )
