@@ -23,3 +23,11 @@
     margin: auto;
   }
 }
+
+@media (max-width:481px) {
+  .text-section {
+    margin-top: 2rem;
+    overflow: auto;
+    height: 80%;
+  }
+}

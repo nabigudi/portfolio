@@ -25,7 +25,7 @@ const Sidebar = ({top = false}: SidebarProps) => {
           <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
         </Link>
         <nav>
-          <LinkSidebar icon={faHome} toLink={'/'}/>
+          <LinkSidebar icon={faHome} navClass={'home-link'} toLink={'/'}/>
           <LinkSidebar icon={faUser} navClass={'about-link'} toLink={'/about'}/>
           <LinkSidebar icon={faSuitcase} navClass={'works-link'} toLink={'/works'}/>
           <LinkSidebar icon={faLaptopFile} navClass={'portfolio-link'} toLink={'/portfolio'}/>

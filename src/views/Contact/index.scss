@@ -65,16 +65,18 @@
   }
 }
 
-.info-map {
+.info-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
   position: absolute;
-  background: #000;
+  background: #14012e;
   top: 50px;
   right: 30%;
   z-index: 999999;
   width: 267px;
-  padding: 20px;
+  padding: 10px 10px 20px 20px;
   color: #fff;
   font-family: 'Helvetica';
   font-size: 17px;
@@ -83,8 +85,125 @@
   animation: fadeIn 1s 1.5s;
   animation-fill-mode: forwards;
 
-  span {
-    font-size: 16px;
+  .info-map {
+    display: flex;
+    flex-direction: column;
+    z-index: 999999;
+    color: #fff;
+    font-family: 'Helvetica';
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 3rem;
+  
+    span, a {
+      font-size: 16px;
+      color: #ffd700;
+    }
+  }
+
+  .modal-close {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+    border: solid .15rem #351a7c;
+    background-color: #351a7c;
     color: #ffd700;
+    border-radius: 50%;
+    padding: 1rem;
+    z-index: 500;
+  }
+}
+
+
+
+
+@media (max-width:961px) {
+  .first-row {
+    flex-direction: column;
+  }
+  .info-card {
+    display: none;
+  }
+  .contact-me-icon {
+    display: block;
+    position: absolute;
+    bottom: 7rem;
+    right: 4rem;
+    border: solid .15rem #ffd700;
+    background: radial-gradient(rgba(255, 217, 0, 0.2) 30%, rgba(255, 217, 0, 0.4) 60%, #ffd700 75%);
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    svg {
+      color: #ffd700;
+      animation-name: wave-hand;
+      animation-duration: 2.5s; 
+      animation-iteration-count: infinite;  
+      transform-origin: 50% 70%; 
+      display: inline-block;
+    }
+  }
+
+  .hi-hand {
+    width: 5rem;
+    color: #ffd700;
+    animation-name: wave-hand;
+    animation-duration: 2.5s; 
+    animation-iteration-count: infinite;  
+    transform-origin: 50% 70%; 
+    display: inline-block;
+  }
+
+  .more-btn {
+    color: #fdb28f;
+    
+  }
+
+  .modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: #14110286;
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    .info-card {
+      display: flex;
+      position: relative;
+      right: auto;
+      z-index: 300;
+      top: auto;
+
+      .modal-close {
+        display: block;
+        position: relative;
+        border: solid .15rem #351a7c;
+        background-color: #351a7c;
+        color: #ffd700;
+        border-radius: 50%;
+        padding: 1rem;
+        z-index: 500;
+      }
+    }
+
+  }
+  @keyframes wave-hand {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(16.0deg) }  
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(20.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }  
+    100% { transform: rotate( 0.0deg) }
   }
 }

@@ -70,11 +70,17 @@
         -webkit-transition: all 0.3s ease-out;
         transition: all 0.3s ease-out;
       }
+    }
 
-      &:first-child {
-        &:after {
-          content: 'HOME';
-        }
+    a.home-link:after, a.about-link:after, a.contact-link:after, a.works-link:after,  a.portfolio-link:after{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }    
+    
+    a.home-link {
+      &:after {
+        content: 'HOME';
       }
     }
 
@@ -136,7 +142,7 @@
 
 @media (max-width:961px) {
   .nav-bar-top {
-    width: 100%;
+    width: 100vw;
     height: 70px;
     min-height: 70px;
     position: absolute;
@@ -146,13 +152,14 @@
   }
 
   .nav-bar {
-    width: 100%;
+    width: 100vw;
     height: 70px;
     min-height: 70px;
     position: absolute;
     bottom: 0;
     top: auto;
     z-index: 3;
+    display: flex;
     .logo {
       display: none;
       visibility: hidden;
@@ -171,4 +178,8 @@
       visibility: hidden;
     }
   }
+  
+  a.home-link:after, a.about-link:after, a.contact-link:after, a.works-link:after,  a.portfolio-link:after{
+    color: #ffd700;
+  }  
 }
