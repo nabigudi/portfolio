@@ -4,7 +4,7 @@
   height: 100%;
   position: absolute;
   top: 0;
-  z-index: 3;
+  z-index: 1000;
   min-height: 500px;
 
   .logo {
@@ -140,6 +140,16 @@
   }
 }
 
+.hi-hand {
+  width: 5rem;
+  color: #ffd700;
+  animation-name: wave-hand;
+  animation-duration: 2.5s; 
+  animation-iteration-count: infinite;  
+  transform-origin: 50% 70%; 
+  display: inline-block;
+}
+
 @media (max-width:961px) {
   .nav-bar-top {
     width: 100vw;
@@ -149,6 +159,24 @@
     top: 0;
     z-index: 3;
     background: #191122;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .extra-info {
+    position: absolute;
+    width: 100vw;
+    height: 165px;
+    margin-top: 70px;
+    background: #14012e;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .nav-bar {
@@ -182,4 +210,15 @@
   a.home-link:after, a.about-link:after, a.contact-link:after, a.works-link:after,  a.portfolio-link:after{
     color: #ffd700;
   }  
+}
+
+@keyframes wave-hand {
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(16.0deg) }  
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(20.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
 }

@@ -68,69 +68,13 @@ const Contact = () => {
           </div>
         </div>
 
-        <InfoCard />
-        {screenSize.width <= 961 &&
-          <Fab
-          mainButtonStyles={divStyle}
-          style={mainButtonStyles}
-          icon={<FontAwesomeIcon className="hi-hand" icon={faHand} />}
-          alwaysShowTitle={true}
-          event={'click'}>
-            <Action
-                text="LinkedIn"
-                style={actionButtonStyles}
-                onClick={()=>window.location.href='https://www.linkedin.com/in/nabila-gudino-ochoa/'}>
-              <FontAwesomeIcon className="more-btn" icon={faLinkedin} />
-            </Action>
-            <Action
-                text="GitHub"
-                style={actionButtonStyles}
-                onClick={()=>window.location.href='https://github.com/nabigudi'}>
-              <i className="fa fa-github" />
-              <FontAwesomeIcon className="more-btn" icon={faGithub} />
-            </Action>
-            <Action
-                text="See Info"
-                style={actionButtonStyles}
-                onClick={()=>setShowModal(true)}>
-              <FontAwesomeIcon className="more-btn" icon={faInfo} />
-            </Action>
-        </Fab>
-        }
-       
-        {showModal &&  
-          <div className="modal">
-            <div className="modal-container">
-              <InfoCard hasCloseButton={true} closeAction={()=>setShowModal(false)} />
-            </div>
-          </div>
-        }
+        <div className="show-info-card">
+          <InfoCard />
+        </div>
       </div>
     </>
   )
 }
-
-const divStyle: React.CSSProperties = {
-  display: 'block',
-  position: 'absolute',
-  right: '0',    
-  border: 'solid .15rem #ffd700',
-  background: 'radial-gradient(rgba(255, 217, 0, 0.2) 30%, rgba(255, 217, 0, 0.4) 60%, #ffd700 75%)',
-  borderRadius: '50%',
-  cursor: 'pointer',
-};
-
-const mainButtonStyles: React.CSSProperties = {
-  paddingBottom: '7rem',
-  bottom: '2.5rem',
-  right: '1rem',    
-}
-
-const actionButtonStyles: React.CSSProperties = {
-  border: 'solid .15rem #bc3c00',
-  background: 'radial-gradient(#bc3c003d 30%, #bc3c00b8 60%, #bc3c00 75%)',
-}
-
 
 const InfoCard = ({hasCloseButton = false, closeAction = ()=>{}}: {hasCloseButton?: boolean, closeAction?: ()=>void}) => {
   return (

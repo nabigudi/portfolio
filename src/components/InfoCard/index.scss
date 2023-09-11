@@ -1,0 +1,54 @@
+.info-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: absolute;
+  background: #14012e;
+  top: 50px;
+  right: 30%;
+  z-index: 100;
+  width: 267px;
+  padding: 10px 10px 20px 20px;
+  color: #fff;
+  font-family: 'Helvetica';
+  font-size: 17px;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeIn 1s 1.5s;
+  animation-fill-mode: forwards;
+
+  .info-map {
+    display: flex;
+    flex-direction: column;
+    z-index: 999999;
+    color: #fff;
+    font-family: 'Helvetica';
+    font-size: 17px;
+    font-weight: 300;
+  
+    span, a {
+      font-size: 16px;
+      color: #ffd700;
+    }
+
+    .icon-info {
+      margin-top: 1rem;
+      .icons{
+        margin-right: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width:961px) {
+  .info-card {
+      display: flex;
+      position: relative;
+      width: 100dvw;
+      right: 0;
+      z-index: 300;
+
+  }
+
+}
