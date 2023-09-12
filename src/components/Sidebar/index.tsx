@@ -26,10 +26,9 @@ const Sidebar = ({top = false}: SidebarProps) => {
           <div onClick={()=>setOpenExtraInfo(!openExtraInfo)}>
             {
               openExtraInfo ?
-                <FontAwesomeIcon className="hi-hand" icon={faClose} size="2x"/>
+                <FontAwesomeIcon className="icon" icon={faClose} size="2x"/>
               :
-
-                <FontAwesomeIcon className="hi-hand" icon={faHand} size="2x"/>
+                <FontAwesomeIcon className="icon hi-hand" icon={faHand} size="2x"/>
             }
           </div>
         </div>

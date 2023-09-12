@@ -92,39 +92,21 @@
       display: inline-block;
     }
   }
+  .contact-form {
+    input[type='text'],
+    input[type='email'] {
+      height: 30px;
+      font-size: 13px;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
 
-  .hi-hand {
-    width: 5rem;
-    color: #ffd700;
-    animation-name: wave-hand;
-    animation-duration: 2.5s; 
-    animation-iteration-count: infinite;  
-    transform-origin: 50% 70%; 
-    display: inline-block;
-  }
-
-  .more-btn {
-    color: #fdb28f;
-    
-  }
-
-  .modal {
-    width: 100vw;
-    height: 100vh;
-    background-color: #14110286;
-    z-index: 100000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  @keyframes wave-hand {
-    0% { transform: rotate( 0.0deg) }
-    10% { transform: rotate(16.0deg) }  
-    20% { transform: rotate(-8.0deg) }
-    30% { transform: rotate(20.0deg) }
-    40% { transform: rotate(-4.0deg) }
-    50% { transform: rotate(10.0deg) }
-    60% { transform: rotate( 0.0deg) }  
-    100% { transform: rotate( 0.0deg) }
+    textarea {
+      height: 50px;
+      font-size: 13px;
+      color: #fff;
+      padding: 10px;
+      min-height: 100px;
+    }
   }
 }

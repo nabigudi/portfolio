@@ -140,14 +140,17 @@
   }
 }
 
-.hi-hand {
+.icon {
   width: 5rem;
   color: #ffd700;
+  display: inline-block;
+}
+
+.hi-hand {
   animation-name: wave-hand;
   animation-duration: 2.5s; 
   animation-iteration-count: infinite;  
   transform-origin: 50% 70%; 
-  display: inline-block;
 }
 
 @media (max-width:961px) {
@@ -171,7 +174,7 @@
     position: absolute;
     width: 100vw;
     height: 165px;
-    margin-top: 70px;
+    margin-top: 20px;
     background: #14012e;
     display: flex;
     flex-direction: row;

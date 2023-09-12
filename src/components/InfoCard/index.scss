@@ -14,9 +14,6 @@
   font-family: 'Helvetica';
   font-size: 17px;
   font-weight: 300;
-  opacity: 0;
-  animation: fadeIn 1s 1.5s;
-  animation-fill-mode: forwards;
 
   .info-map {
     display: flex;
@@ -26,6 +23,9 @@
     font-family: 'Helvetica';
     font-size: 17px;
     font-weight: 300;
+    opacity: 0;
+    animation: fadeIn 1s 1s;
+    animation-fill-mode: forwards;
   
     span, a {
       font-size: 16px;
