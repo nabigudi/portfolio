@@ -32,51 +32,51 @@
 }
 
 
-.slider {
-  // background: white;
-  height: 250px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: auto;
-}
+// .slider {
+//   // background: white;
+//   height: 250px;
+//   margin: auto;
+//   overflow: hidden;
+//   position: relative;
+//   width: auto;
+// }
 
-.slider::before, .slider::after {
-  background: linear-gradient(to right, #351a7c 0%, rgba(255, 255, 255, 0) 100%);
-  content: "";
-  height: 100%;
-  position: absolute;
-  width: 100px;
-  z-index: 2;
-}
+// .slider::before, .slider::after {
+//   background: linear-gradient(to right, #351a7c 0%, rgba(255, 255, 255, 0) 100%);
+//   content: "";
+//   height: 100%;
+//   position: absolute;
+//   width: 100px;
+//   z-index: 2;
+// }
 
-.slider::after {
-  right: 0;
-  top: 0;
-  -webkit-transform: rotateZ(180deg);
-  transform: rotateZ(180deg);
-}
+// .slider::after {
+//   right: 0;
+//   top: 0;
+//   -webkit-transform: rotateZ(180deg);
+//   transform: rotateZ(180deg);
+// }
 
-.slider::before {
-  left: 0;
-  top: 0;
-}
+// .slider::before {
+//   left: 0;
+//   top: 0;
+// }
 
-.slider .slide-track {
-  animation: scroll 80s linear infinite;
-  display: flex;
-  width: calc(250px * 1);
+// .slider .slide-track {
+//   animation: scroll 80s linear infinite;
+//   display: flex;
+//   width: calc(250px * 1);
 
-}
+// }
 
-.slider .slide-track:hover {
-  animation-play-state: paused;
-}
+// .slider .slide-track:hover {
+//   animation-play-state: paused;
+// }
 
-.slider .slide {
-  height: 250px;
-  width: 250px;
-}
+// .slider .slide {
+//   height: 250px;
+//   width: 250px;
+// }
 
 @keyframes scroll {
   0% {
@@ -84,5 +84,43 @@
   }
   100% {
       transform: translateX(calc(-250px * 15));
+  }
+}
+
+@media (max-width:961px) {
+  .portfolio-section {
+    margin: 0;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .portfolio-container {
+    display: block;
+  }
+
+  .slick-list {
+    height: auto !important;
+    margin: 2rem !important;
+  }
+  
+  .slick-slider {
+    margin: 3rem;
+  }
+
+  .slick-slide {
+    height: 33vh;
+    object-fit: contain;
+    object-position: center;
+    width: 70%;
+  }
+
+  .slick-slide div {
+    color: white
+  }
+
+  .portfolio-box {
+    width: 100%;
+    max-width: 100%;
+    height: 20rem;
   }
 }

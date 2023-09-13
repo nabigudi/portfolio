@@ -4,24 +4,46 @@ import "./index.scss";
 import Item from "./Item";
 import Data from "../../data/portfolio.json"
 import { Portfolio as PortfolioType } from "../../types/Portfolio";
+import useScreenSize from "../../helpers/useScreenSize";
+import Slider from "react-slick";
 
 const Portfolio = () => { 
+    const screenSize = useScreenSize();
     const [portfolio, setPortfolio] = useState<PortfolioType[]>([]);
     useEffect(() => {
       setPortfolio(Data.portfolio)
     }, []);
-
-    const renderPortfolio = (portfolio: PortfolioType[]) => {
+  
+    var settings = {
+      dots: true,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      cssEase: "ease-out",
+      fade: true,
+    };
+  
+    const renderPortList = (portfolio: PortfolioType[]) => {
+      return portfolio.map((port, idx) => {
+        return (
+          <div className="portfolio-box" key={idx}>
+            <Item item={port} />
+          </div>
+        )
+    })
+    }
+  
+    const renderPorts = (portfolio: PortfolioType[]) => {
+      console.log(screenSize.width)
       return (
         <div className="portfolio-container">
           {
-            portfolio.map((port, idx) => {
-                return (
-                  <div className="portfolio-box" key={idx}>
-                      <Item item={port} />
-                  </div>
-                )
-            })
+            screenSize.width < 961 ?
+              <Slider {...settings}>
+                {renderPortList(portfolio)}
+              </Slider>
+            :
+            renderPortList(portfolio)
           }
         </div>
       );
@@ -38,7 +60,7 @@ const Portfolio = () => {
               />
             </h1>
             <section className="portfolio-section">
-               {renderPortfolio(portfolio)}
+               {renderPorts(portfolio)}
             </section>
           </div>
 
