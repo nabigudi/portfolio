@@ -13,29 +13,30 @@ const Selected = () => {
 
   return (
     <>
-      <div className="container portfolio-page">
-        <div className="portfolio-zone">
-          <h1>
-            <AnimatedLetters
-              strArray={item.title.split('')}
-              idx={10}
-            />
-          </h1>
-          <span className="company">Company: {item.company}</span>
-          
-          {item.longDescription.split('//').map(paragraph => <p>{paragraph}</p>)}
+      <div className="container jobs-selected-page">
 
-          <h2>
-            <AnimatedLetters
-              strArray={'Techs'.split('')}
-              idx={10}
-            />
-          </h2>
+        <div className="text-zone">
+            <h1>
+              <AnimatedLetters
+                strArray={item.title.split('')}
+                idx={10}
+              />
+            </h1>
+            <span className="company">Company: {item.company}</span>
+            
+            <section className="text-section">
+              {item.longDescription.split('//').map(paragraph => <p>{paragraph}</p>)}
+            </section>
+            <h2>
+              <AnimatedLetters
+                strArray={'Techs'.split('')}
+                idx={10}
+              />
+            </h2>
 
-          <p>{item.description}</p>
+            <p>{item.description}</p>
+          </div>
         </div>
-
-      </div>
       </>
   )
 }

@@ -6,8 +6,9 @@ interface AnimatedButtonProps {
   state?: {}; 
   page: string;
   isLink?: boolean;
+  action?: ()=>void;
 }
-const AnimatedButton = ({ str, state, page, isLink = true }: AnimatedButtonProps) => {
+const AnimatedButton = ({ str, state, page, action, isLink = true }: AnimatedButtonProps) => {
   return (
     <div>
       {isLink ? 
@@ -19,7 +20,7 @@ const AnimatedButton = ({ str, state, page, isLink = true }: AnimatedButtonProps
           {str}
         </Link>
         :
-          <div className="link">
+          <div onClick={action} className="link">
             <span></span>
             <span></span>
             <span></span>

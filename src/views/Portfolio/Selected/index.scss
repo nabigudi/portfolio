@@ -1,3 +1,18 @@
+.portfolio-zone {
+  top: 45%;
+  width: 85%;
+  height: 75%;
+  .text-zone {
+    left: 15% !important;
+    margin-top: 1.5rem;
+ 
+  }
+}
+
+.link {
+  margin-top: 1rem;
+}
+
 .portfolio-images{ 
   height:400px;
   display: flex;
@@ -78,4 +93,20 @@
 .slider .slide {
   height: 250px;
   width: 250px;
+}
+
+.showcase-small{
+  display: none;
+  opacity: 0;
+}
+
+.showcase-small.show-showcase{
+  display: block;
+}
+
+
+@media (max-width:481px) {
+  .text-section {
+    height: 45%;
+  }
 }
