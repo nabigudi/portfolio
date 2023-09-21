@@ -30,4 +30,10 @@
     overflow: auto;
     height: 80%;
   }
+  .portfolio-selected-page,
+  .jobs-selected-page{
+    .text-section {
+      height: 50%;
+    }
+  }
 }
