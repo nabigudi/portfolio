@@ -26,25 +26,26 @@
     margin-right: 5%;
     display: flex;
     justify-content: flex-end;
-    .porfolio-figure-alone{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      width: 50%;
-      background-color: #351a7c;
-      transition: all .5s ease-in-out;
+  }
 
-      img {
-        width: 100%;
-      }
-      .portfolio-figure-caption {
-        margin-top: 1rem;
-        font-size: 1.25rem;
-        color: white;
-      }
+  .porfolio-figure-alone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 50%;
+    background-color: #351a7c;
+    transition: all .5s ease-in-out;
+
+    img {
+      width: 100%;
+    }
+    .portfolio-figure-caption {
+      margin-top: 1rem;
+      font-size: 1.25rem;
+      color: white;
     }
   }
 
@@ -73,6 +74,10 @@
       }
 
       .marqueeAI__group{
+        width: 100%;
+      }
+
+      .porfolio-figure-alone{
         width: 100%;
       }
     }

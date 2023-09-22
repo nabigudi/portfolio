@@ -6,7 +6,7 @@
   width: 85%;
   vertical-align: middle;
   display: table-cell;
-  height: 85%;
+  max-height: 90%;
 }
 
 .portfolio-container {
@@ -17,11 +17,13 @@
 }
 
 .portfolio-box {
+  display: block !important;
   position: relative;
   flex: 1 1 20%;
   height: 20rem;
   overflow: hidden;
   border-radius: 10px;
+  width: 100dvw !important;
   max-width: calc(25% - 10px);
 }
 
@@ -29,15 +31,6 @@
   margin: 0 80px;
   height: 100%;
   overflow: auto;
-}
-
-@keyframes scroll {
-  0% {
-      transform: translateX(0);
-  }
-  100% {
-      transform: translateX(calc(-250px * 15));
-  }
 }
 
 @media (max-width:961px) {
