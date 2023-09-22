@@ -34,7 +34,6 @@ const Works = () => {
   }
 
   const renderJobs = (jobs: Job[]) => {
-    console.log(screenSize.width)
     return (
       <div className="jobs-container">
         {

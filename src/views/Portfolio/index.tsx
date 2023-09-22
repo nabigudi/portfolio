@@ -34,7 +34,6 @@ const Portfolio = () => {
     }
   
     const renderPorts = (portfolio: PortfolioType[]) => {
-      console.log(screenSize.width)
       return (
         <div className="portfolio-container">
           {
