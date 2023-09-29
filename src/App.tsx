@@ -3,11 +3,12 @@ import Home from './views/Home'
 import About from './views/About'
 import Contact from './views/Contact'
 import Layout from './components/Layout'
-import Works from './views/Works'
-import Portfolio from './views/Portfolio'
 import Dashboard from './views/Dashboard'
+import JobList from "./data/jobs.json"
+import PortfolioList from "./data/portfolio.json"
+import Portfolio from './views/Portfolio'
 import SelectedPorfolio from './views/Portfolio/Selected'
-import SelectedWork from './views/Works/Selected'
+import SelectedWork from './views/Portfolio/Selected'
 import './App.scss'
 
 function App() {
@@ -18,8 +19,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="works" element={<Works />} />
-          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="works" element={<Portfolio portfolioList={JobList.jobs} title="Works"/>} />
+          <Route path="portfolio" element={<Portfolio portfolioList={PortfolioList.portfolio} title="Portfolio"/>} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="selectedWork" element={<SelectedWork />} />
           <Route path="selectedPortfolio" element={<SelectedPorfolio />} />

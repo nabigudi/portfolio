@@ -1,4 +1,4 @@
-import { Portfolio } from "../../../types/Portfolio";
+import { Portfolio } from "../../../types/Portofolio";
 import "./index.scss";
 import AnimatedButton from "../../../components/AnimatedButton";
 import { Link } from "react-router-dom";
@@ -12,7 +12,7 @@ const Item = ({item} : ItemProps) => {
   return(
     <Link to={'/selectedPortfolio'} state={{item: item}} className="image-box" >
       <img 
-      src={require(`../../../assets/images/portfolio/${item.cover}`)}
+      src={require(`../../../assets/images/${item.cover}`)}
       className="portfolio-image"
       alt="portfolio" />
       <div className="content">

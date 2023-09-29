@@ -1,7 +1,7 @@
 {
     "jobs": [
         {
-            "cover": "polaris.png",
+            "cover": "works/polaris.png",
             "title": "React Engineer",
             "company": "TMT Insights",
             "date": "Sep 2022 - Apr 2023",
@@ -11,7 +11,7 @@
             "url": ""
         },
         {
-            "cover": "health.jpeg",
+            "cover": "works/health.jpeg",
             "title": "Frontend Engineer",
             "company": "Foxbox Digital",
             "date": "Oct 2021 - Jul 2022",
@@ -21,7 +21,7 @@
             "url": ""
         },
         {
-            "cover": "qupos.jpg",
+            "cover": "works/qupos.jpg",
             "title": "Frontend Engineer",
             "company": "Qu Beyond",
             "date": "Apr 2021 - Oct 2021",
@@ -31,7 +31,7 @@
             "url": ""
         },
         {
-            "cover": "retail.jpg",
+            "cover": "works/retail.jpg",
             "title": "UX Developer",
             "company": "Making Sense",
             "date": "Jan 2020 - Apr 2021",
@@ -41,7 +41,7 @@
             "url": ""
         },
         {
-            "cover": "web-design.jpg",
+            "cover": "works/web-design.jpg",
             "title": "Frontend Developer and UX/UI Designer",
             "company": "Darwoft",
             "date": "Oct 2018 - Jan 2020",
@@ -51,7 +51,7 @@
             "url": ""
         },
         {
-            "cover": "club-grido.jpg",
+            "cover": "works/club-grido.jpg",
             "title": "Frontend Developer and UX/UI Designer",
             "company": "SmartFran",
             "date": "Feb 2017 - Aug 2018",
@@ -61,7 +61,7 @@
             "url": ""
         },
         {
-            "cover": "agro.jpeg",
+            "cover": "works/agro.jpeg",
             "title": "Frontend Developer",
             "company": "Sooft Technology",
             "date": "Nov 2015 - Jan 2017",

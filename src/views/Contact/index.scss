@@ -15,13 +15,6 @@
         padding-right: 5px;
       }
     }
-    .button-row {
-      display: flex;
-      justify-content: flex-end;
-      .flat-button {
-        margin: 0;
-      }
-    }
   }
 
   input[type='text'],
@@ -47,21 +40,53 @@
     box-sizing: border-box;
     min-height: 150px;
   }
-
+}
+.button-row {
+  display: flex;
+  justify-content: flex-end;
   .flat-button {
-    color: #ffd700;
     font-size: 11px;
     letter-spacing: 3px;
     text-decoration: none;
     padding: 8px 10px;
     border: 1px solid #ffd700;
-    float: left;
     border-radius: 4px;
     background: 0 0;
     text-transform: uppercase;
-    float: right;
     text-align: center;
-    margin-right: 10px;
+    min-width: 100px;
+    .btn-text {
+      color: #ffd700;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-decoration: none;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .loading {
+      color: #d6d2bb;
+      animation-name: spin;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; 
+    }
+  }
+}
+
+
+.flat-button.disabled{
+  border-color: #d6d2bb;
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
   }
 }
 

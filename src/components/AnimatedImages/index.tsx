@@ -23,7 +23,7 @@ const RenderImage = ({image, index, stopMoveAction} : RenderImageProps) => {
     <div className={`image ${isHovered ? 'hovered' : ''}`} onMouseEnter={()=>setIsHovered(true)} onMouseLeave={()=>setIsHovered(false)} key={index}>
       <figure className='porfolio-figure'>
         <div>
-          <img src={require(`../../assets/images/portfolio/${image.src}`)} alt="portfolio"/>
+          <img src={require(`../../assets/images/${image.src}`)} alt="portfolio"/>
           <figcaption className='portfolio-figure-caption'>Fig.{index+1} - {image.description}</figcaption>
         </div>
       </figure>
@@ -31,21 +31,21 @@ const RenderImage = ({image, index, stopMoveAction} : RenderImageProps) => {
   )
 }
 
-const AnimatedTechs = ({ images, direction = '' }: AnimatedImagesProps) => {
+const AnimatedImages = ({ images, direction = '' }: AnimatedImagesProps) => {
   const [stopMovement, setStopMovement] = useState(false);
   return (
     <>
        <div className={`${stopMovement ? 'stop' : ''} marqueeAI marqueeAI--vertical ${direction}`}>
             <div className="marqueeAI__group">
-              {images.map((image, index) => <RenderImage image={image} index={index} stopMoveAction={setStopMovement}/>)}
+              {images.map((image, index) => <RenderImage key={index} image={image} index={index} stopMoveAction={setStopMovement}/>)}
             </div>
 
             <div aria-hidden="true" className="marqueeAI__group">
-              {images.map((image, index) => <RenderImage image={image} index={index} stopMoveAction={setStopMovement}/>)}
+              {images.map((image, index) => <RenderImage key={index} image={image} index={index} stopMoveAction={setStopMovement}/>)}
             </div>
           </div>
     </>
   )
 }
 
-export default AnimatedTechs
+export default AnimatedImages

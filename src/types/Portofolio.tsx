@@ -4,9 +4,10 @@ export interface Portfolio {
   date: string;
   description: string;
   longDescription: string;
-  images: PortfolioImage[];
-  type: string;
+  images?: PortfolioImage[];
+  type?: string;
   url: string;
+  company?: string;
 }
 
 export interface PortfolioImage {

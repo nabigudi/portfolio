@@ -25,50 +25,52 @@ const Selected = () => {
   return (
     <>
       <div className="container portfolio-selected-page">
-        <div className={`${screenSize.width < 961 ? 'showcase-small' : 'showcase'} ${screenSize.width < 961 ? (showShowcase ? 'show-showcase' : 'hide-showcase') : ''}`}> 
-          <div className={`${showShowcase ? 'close-visible' : 'close-hidden'}`} onClick={()=>setShowShowcase(!showShowcase)}>
-            <FontAwesomeIcon icon={faClose} />
-          </div>
-            { item.images.length && item.images[0].src !== "" && (
-              item.images.length > 2 ?
-                <div>
-                  <AnimatedImages images={item.images} />
-                </div>
-              : 
-                <figure className={`porfolio-figure-alone ${isHovered ? 'hovered' : ''}`} onMouseEnter={()=>setIsHovered(true)} onMouseLeave={()=>setIsHovered(false)}>
+        { item.images && item.images.length && 
+          <div className={`${screenSize.width < 961 ? 'showcase-small' : 'showcase'} ${screenSize.width < 961 ? (showShowcase ? 'show-showcase' : 'hide-showcase') : ''}`}> 
+            <div className={`${showShowcase ? 'close-visible' : 'close-hidden'}`} onClick={()=>setShowShowcase(!showShowcase)}>
+              <FontAwesomeIcon icon={faClose} />
+            </div>
+              { item.images.length && item.images[0].src !== "" && (
+                item.images.length > 2 ?
                   <div>
-                    <img src={require(`../../../assets/images/portfolio/${item.images[0].src}`)} alt="portfolio"/>
-                    <figcaption className='portfolio-figure-caption'>Fig.1 - {item.images[0].description}</figcaption>
+                    <AnimatedImages images={item.images} />
                   </div>
-                </figure>
-              )
-            } 
-        </div>
-          <div className="text-zone">
-            <h1>
-              <AnimatedLetters
-                strArray={item.title.split('')}
-                idx={10}
-              />
-            </h1>
-            <section className="text-section">
-              {item.longDescription.split('//').map((paragraph, index) => <p key={index}>{paragraph}</p>)}
-            </section>
-
-            {screenSize.width < 961 &&
-              <AnimatedButton str='View showcase' action={()=>setShowShowcase(!showShowcase)} page="" isLink={false} />
-            }
-            <h2>
-              <AnimatedLetters
-                strArray={'Techs'.split('')}
-                idx={10}
-              />
-            </h2>
-
-            <p>{item.description}</p>
+                : 
+                  <figure className={`porfolio-figure-alone ${isHovered ? 'hovered' : ''}`} onMouseEnter={()=>setIsHovered(true)} onMouseLeave={()=>setIsHovered(false)}>
+                    <div>
+                      <img src={require(`../../../assets/images/${item.images[0].src}`)} alt="portfolio"/>
+                      <figcaption className='portfolio-figure-caption'>Fig.1 - {item.images[0].description}</figcaption>
+                    </div>
+                  </figure>
+                )
+              } 
           </div>
+        }
+        <div className="text-zone">
+          <h1>
+            <AnimatedLetters
+              strArray={item.title.split('')}
+              idx={10}
+            />
+          </h1>
+          <section className="text-section">
+            {item.longDescription.split('//').map((paragraph, index) => <p key={index}>{paragraph}</p>)}
+          </section>
+
+          {screenSize.width < 961 &&
+            <AnimatedButton str='View showcase' action={()=>setShowShowcase(!showShowcase)} page="" isLink={false} />
+          }
+          <h2>
+            <AnimatedLetters
+              strArray={'Techs'.split('')}
+              idx={10}
+            />
+          </h2>
+
+          <p>{item.description}</p>
         </div>
-      </>
+      </div>
+    </>
   )
 }
 
