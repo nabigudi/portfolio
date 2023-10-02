@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import AnimatedLetters from "../../components/AnimatedLetters";
 import "./index.scss";
 import Item from "./Item";
-import { Portfolio } from "../../types/Portofolio";
+import { Portfolio } from "../../types/Portfolio";
 import useScreenSize from "../../helpers/useScreenSize";
 import Slider from "react-slick";
 

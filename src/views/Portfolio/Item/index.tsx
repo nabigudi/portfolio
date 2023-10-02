@@ -1,4 +1,4 @@
-import { Portfolio } from "../../../types/Portofolio";
+import { Portfolio } from "../../../types/Portfolio";
 import "./index.scss";
 import AnimatedButton from "../../../components/AnimatedButton";
 import { Link } from "react-router-dom";
