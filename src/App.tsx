@@ -10,8 +10,19 @@ import Portfolio from './views/Portfolio'
 import SelectedPorfolio from './views/Portfolio/Selected'
 import SelectedWork from './views/Portfolio/Selected'
 import './App.scss'
+import { useEffect } from 'react'
+import { useAppDispatch } from './redux/hooks'
+import { getCurrentSeason, getCurrentSeasonParticles } from './redux/slices/commonSlice'
+import "pathseg";
 
 function App() {
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(getCurrentSeason());
+    dispatch(getCurrentSeasonParticles());
+  }, []);
+  
   return (
     <>
       <Routes>

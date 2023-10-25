@@ -12,6 +12,11 @@
   position: absolute;
 }
 
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
 .top-tags {
   bottom: auto;
   top: 35px;

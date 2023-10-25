@@ -3,20 +3,22 @@ import Sidebar from '../Sidebar'
 import './index.scss'
 import Particles from "react-particles";
 import type { Container, Engine } from "tsparticles-engine";
-import { loadSlim } from "tsparticles-slim";
-import { ParticlesOptions } from "../../helpers/ParticlesOptions";
+import { loadFull } from "tsparticles";
 import { useCallback } from 'react';
+import { selectCurrentSeasonParticles } from '../../redux/selectors/commonSelectors';
+import { useAppSelector } from '../../redux/hooks'
 
 const Layout = () => {
+  const currentSeasonParticles = useAppSelector(selectCurrentSeasonParticles);
+
   const particlesInit = useCallback(async (engine: Engine) => {
     console.log(engine);
-    await loadSlim(engine);
+    await loadFull(engine);
 }, []);
 
   const particlesLoaded = useCallback(async (container: Container | undefined) => {
     await console.log(container);
 }, []);
-
 
   return (
     <div className="App">
@@ -24,7 +26,7 @@ const Layout = () => {
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
-        options={ParticlesOptions}
+        options={currentSeasonParticles}
       />
       <Sidebar top/>
       <Sidebar />
