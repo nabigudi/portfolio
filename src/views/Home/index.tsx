@@ -1,9 +1,10 @@
-import Me from '../../assets/images/me.png'
 import AnimatedLetters from '../../components/AnimatedLetters'
 import './index.scss'
 import AnimatedButton from '../../components/AnimatedButton';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
   const hiArray = Array.from('Hi, ');
   const nameArray = Array.from('I\'m Nabila');
   const jobArray = Array.from('Front-end Developer.');
@@ -11,7 +12,6 @@ const Home = () => {
   return (
     <>
       <div className="container home-page">
-        {/* <img className="me-photo" src={Me} alt='Nabila talking on Webconf 2019'/> */}
         <div className="me-photo-div"></div>
         <div className="text-zone flex-col">
           <span className="tags-h1">&lt;h1&gt;</span>

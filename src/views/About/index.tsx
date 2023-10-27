@@ -2,7 +2,7 @@ import AnimatedLetters from '../../components/AnimatedLetters'
 import './index.scss'
 import AnimatedTechs from '../../components/AnimatedTechs'
 import { techsList } from '../../helpers/TechList'
-
+import DownloadCVButton from '../../components/DownloadCVButton'
 
 const About = () => {
   return (
@@ -40,6 +40,8 @@ const About = () => {
               understand the various aspects of the project.
             </p>
           </section>
+
+          <DownloadCVButton/>
           
         </div>
 

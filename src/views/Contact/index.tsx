@@ -5,6 +5,7 @@ import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faSpinner} from '@fortawesome/free-solid-svg-icons';
 import 'react-tiny-fab/dist/styles.css';
+import DownloadCVButton from '../../components/DownloadCVButton';
 
 
 const Contact = () => {
@@ -110,6 +111,7 @@ const InfoCardContact = () => {
           <span>Argentina, Córdoba  </span>
           <a href="tel:+5493513909401">+5493513909401</a>
           <a href="mailto:nabi.gudi@gmail.com">nabi.gudi@gmail.com</a>
+          <DownloadCVButton/>
       </div>
     </div>
    

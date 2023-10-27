@@ -2,6 +2,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import './index.scss'
+import DownloadCVButton from '../DownloadCVButton';
 
 const InfoCard = () => {
   return (
@@ -16,6 +17,7 @@ const InfoCard = () => {
             <a className="icons" href="https://www.linkedin.com/in/nabila-gudino-ochoa/"><FontAwesomeIcon className="more-btn" icon={faLinkedin} size="2x"/></a>
             <a className="icons" href="https://github.com/nabigudi"><FontAwesomeIcon className="more-btn" icon={faGithub} size="2x"/></a>
           </div>
+          <DownloadCVButton/>
          
       </div>
     </div>
