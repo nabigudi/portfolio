@@ -94,6 +94,17 @@
             "longDescription": "I always love drawing since I was a child, so nowadays I tried to continue with that passion with some art, just because.",
             "type": "drawing",
             "url": "https://www.instagram.com/corina.draws/"
+        },
+        {
+            "cover": "portfolio/swaw.png",
+            "title": "SWAW",
+            "date": "Jan 2021",
+            "description": "Adobe Photoshop, React, HTML5, Sass",
+            "longDescription": "Star Wars Animated Worlds is a Star Wars planets wiki website. Here, the users can access to information about some planets of the Star Wars universe.",
+            "images": [{"src": "portfolio/swaw/swaw1.png", "description": "Web implementation - Planets Section"}, 
+            {"src":  "portfolio/swaw/swaw2.png", "description": "Web implementation - Planet Info Section"}],
+            "type": "development",
+            "url": "https://gitlab.com/nabi.gudi/swaw"
         }
     ]
 }
