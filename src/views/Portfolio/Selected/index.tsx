@@ -55,6 +55,10 @@ const Selected = () => {
           </h1>
           <section className="text-section">
             {item.longDescription.split('//').map((paragraph, index) => <p key={index}>{paragraph}</p>)}
+
+            {item.url &&
+              <a className="portfolio-url" href={item.url} target="_blank" rel="noopener noreferrer">Check this project here!</a>
+            }
           </section>
 
           {screenSize.width < 961 &&

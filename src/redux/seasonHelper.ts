@@ -17,21 +17,27 @@ export const helper = [
   {
     name: 'autumn',
     start: '21/03',
-    end: '20/06'
+    end: '31/03'
   },
   {
     name: 'winter',
     start: '21/06',
-    end: '20/09'
+    end: '21/07'
   },
   {
     name: 'spring',
     start: '21/09',
-    end: '20/12'
+    end: '21/10'
   },
   {
     name: 'summer',
     start: '21/12',
-    end: '20/03'
+    end: '30/12'
+  },
+  {
+    name: 'summer',
+    start: '12/01',
+    end: '31/01'
   }
+
 ]
