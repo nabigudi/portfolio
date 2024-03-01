@@ -105,6 +105,17 @@
             {"src":  "portfolio/swaw/swaw2.png", "description": "Web implementation - Planet Info Section"}],
             "type": "development",
             "url": "https://gitlab.com/nabi.gudi/swaw"
+        },
+        {
+            "cover": "portfolio/shaina.png",
+            "title": "Shaina ChatBot",
+            "date": "Jan 2024",
+            "description": "NextJS, HTML5, Sass",
+            "longDescription": "Shaina is a chatbot that uses OpenIA to answer questions.",
+            "images": [{"src": "portfolio/shaina/shaina1.png", "description": "Web implementation - Chatbot"}],
+            "type": "development",
+            "url": "https://github.com/nabigudi/shaina-ai-chat-app"
         }
+
     ]
 }

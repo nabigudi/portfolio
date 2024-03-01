@@ -16,7 +16,14 @@ const Item = ({item} : ItemProps) => {
       className="portfolio-image"
       alt="portfolio" />
       <div className="content">
-        <p className="title">{item.title}</p>
+        {item.company?.length ? 
+          <>
+            <p className="title">{item.company}</p>
+            <p className="subtitle">{item.title}</p>
+          </>
+          :
+          <p className="title">{item.title}</p>
+        }
         <h4 className="description">{item.description}</h4>
         <AnimatedButton str={"View"} page={''} state={{}} isLink={false}/>
       </div>
