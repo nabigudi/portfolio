@@ -17,3 +17,7 @@ body {
   margin-top: 200px;
   margin-left: 200px;
 }
+
+.App {
+  top: 0;
+}
